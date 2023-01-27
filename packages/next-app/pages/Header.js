@@ -6,7 +6,7 @@ function Header() {
       <title>Buy Me A Coffee</title>
       <meta
         name="description"
-        content="A DApp for my supporters to buy me coffee with crypto.💕"/>
+        content="Buy Me A Coffee"/>
       <link rel="icon" href="/BuyMeCoffee.png" />
       <meta property="og:title" content="Buy Me Coffee" />
       <meta property="og:type" content="website" />

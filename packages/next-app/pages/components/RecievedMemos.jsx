@@ -9,7 +9,7 @@ import {
   } from '@chakra-ui/react';
 // utils
 import { backgrounds } from "../../utils/backgrounds"
-import { images } from "../../utils/images"
+
 // Wagmi 
 import { useContract, useSigner, useAccount } from 'wagmi';
 // Address + ABI 
@@ -76,7 +76,7 @@ import contractABI from '../../contracts/ABI/BuyMeCoffee.json';
           </chakra.p>
         </Flex>
         <Avatar
-          src={images[memoInfo.index % 7]}
+          
           height={'80px'}
           width={'80px'}
           alignSelf={'center'}
@@ -131,7 +131,7 @@ import contractABI from '../../contracts/ABI/BuyMeCoffee.json';
                 fontWeight={'bold'}
                 fontSize={20}
                 textTransform={'uppercase'}
-                color={'purple.400'}>
+                color={'blue.500'}>
                 All Coffees Recieved ☕️
             </chakra.h3>
         </Box>

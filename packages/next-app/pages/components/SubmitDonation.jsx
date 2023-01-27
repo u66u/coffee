@@ -32,7 +32,7 @@ export default function SubmitDonation() {
   useEffect(() => {
     if(success) {
         toast({
-        title: "Success!",
+        title: "Success! Thank you <3",
         status: "success",
         duration: 4000,
         isClosable: false,
@@ -42,7 +42,7 @@ export default function SubmitDonation() {
     
     if(loading) {
         toast({
-        title: "Waiting...",
+        title: "Processing... Hang tight!",
         status: "loading",
         duration: 4000,
         isClosable: false,
@@ -91,13 +91,13 @@ export default function SubmitDonation() {
     <>
       <Button
         onClick={onOpen}
-        colorScheme={'pink'}
-        bg={'pink.300'}
-        rounded={'full'}
+        rounded={'lg'}
+        size={'lg'}
+        fontWeight={'normal'}
         px={6}
-        _hover={{
-          bg: 'pink.500',
-        }}>
+        colorScheme={'blue'}
+        bg={'blue.400'}
+        _hover={{ bg: 'blue.500' }}>
           Send Coffee
       </Button>
       {/* Modal Form */}
@@ -130,23 +130,23 @@ export default function SubmitDonation() {
           <ModalFooter>
             {/* Donate Coffee */}
             <Button 
-              colorScheme={'pink'}
-              bg={'pink.300'} 
+              colorScheme={'blue'}
+              bg={'blue.300'} 
               mr={3}
               onClick={()=>buyACoffee(true)}
               _hover={{
-                bg: 'pink.500',
+                bg: 'blue.500',
             }}>
               Send Coffee
             </Button>
             {/* Donate Large Coffee*/}
             <Button 
-              colorScheme={'pink'}
-              bg={'pink.300'} 
+              colorScheme={'blue'}
+              bg={'blue.300'} 
               mr={3}
               onClick={()=>buyACoffee(false)}
               _hover={{
-                bg: 'pink.500',
+                bg: 'blue.500',
             }}>
               Send Large Coffee
             </Button>

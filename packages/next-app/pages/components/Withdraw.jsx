@@ -78,9 +78,9 @@ export default function Withdraw() {
     <>
       <Button
         onClick={onOpen}
-        colorScheme={'pink'}
+        colorScheme={'blue'}
         bg={'purple.300'}
-        rounded={'full'}
+        rounded={'xl  '}
         px={6}
         _hover={{
           bg: 'purple.500',
@@ -105,12 +105,12 @@ export default function Withdraw() {
           <ModalFooter>
             {/* Withdraw */}
             <Button 
-              colorScheme={'pink'}
-              bg={'pink.300'} 
+              colorScheme={'purple'}
+              bg={'purple.300'} 
               mr={3}
               onClick={()=>withdrawFunds()}
               _hover={{
-                bg: 'pink.500',
+                bg: 'purple.500',
             }}>
               Withdraw
             </Button>
